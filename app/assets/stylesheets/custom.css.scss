@@ -1,5 +1,6 @@
 @import "bootstrap";   //imports the styling classes present in twitter bootstrap which are imported in custom.css.scss
-
+$lightGray: #999;
+$grayMediumLight: #eaeaea;
 /* universal */
 
 html {
@@ -19,12 +20,23 @@ textarea {
   resize: vertical;			//text area changes if content increases vertically only the text area width doesn't change
 }
 
+/*
 .center {
   text-align: center;   //aligns text to the center
 }
 
 .center h1 {
   margin-bottom: 10px;   //margin bottom 10 px fro heading h1
+}
+*/
+
+//the above code nested using sass nesting feature which adds on the CSS not present feature thats why sass is preffered as better than css	
+
+.center {
+  text-align: center;   //aligns text to the center
+  h1 {
+  margin-bottom: 10px;   //margin bottom 10 px fro heading h1
+  }
 }
 
 
@@ -47,7 +59,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $lightGray;
 }
 
 p {
@@ -74,3 +86,34 @@ p {
   color: #fff;
   text-decoration: none;
 }
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a{
+  color: $gray;
+    &:hover {
+  color: $grayDarker;
+	}
+  }
+
+  small{
+  float: left;
+   }
+
+   ul {
+  float: right;
+  list-style: none;
+	li {
+  float: left;
+  margin-left: 10px;
+	}
+	}
+}
+	
+	
