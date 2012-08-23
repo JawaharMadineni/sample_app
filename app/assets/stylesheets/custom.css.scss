@@ -1,0 +1,76 @@
+@import "bootstrap";   //imports the styling classes present in twitter bootstrap which are imported in custom.css.scss
+
+/* universal */
+
+html {
+  overflow-y: scroll; //adds a scrolling bar on y axis
+}
+
+body {
+  padding-top: 60px;   //adds a padding at body top padding-right: 60 px for right padding can be done too
+}
+
+section {
+  overflow: auto;
+}
+  //Value   visible   The content is not clipped. hidden The content is clipped and no scrollbars are provided.scroll  The content is clipped and scrollbars //are provided. auto   The behavior of the 'auto' value is user agent-dependent, but should cause a scrolling mechanism to be provided for overflowing //boxes. inherit   Takes the same specified value as the property for the element's parent. 
+	
+textarea {
+  resize: vertical;			//text area changes if content increases vertically only the text area width doesn't change
+}
+
+.center {
+  text-align: center;   //aligns text to the center
+}
+
+.center h1 {
+  margin-bottom: 10px;   //margin bottom 10 px fro heading h1
+}
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;		//no of lines to accomodate the heading
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;  //no of line sthat accomodate it
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
